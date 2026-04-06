@@ -1,0 +1,81 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Expo: Start Dev Server",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Expo: iOS Simulator",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "run:ios"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Expo: Android Emulator",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "run:android"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Expo: Web",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start", "--web"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "jest",
+        "--runInBand",
+        "--no-cache",
+        "--watchAll=false",
+        "${relativeFile}"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "EAS Build: iOS",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["eas", "build", "--platform", "ios", "--profile", "development"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "EAS Build: Android",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "eas",
+        "build",
+        "--platform",
+        "android",
+        "--profile",
+        "development"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

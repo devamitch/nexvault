@@ -1,0 +1,10 @@
+node_modules/
+dist/
+web-build/
+.expo/
+ios/
+android/
+coverage/
+*.frag
+*.vert
+*.glsl

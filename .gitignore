@@ -36,3 +36,80 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+# Dependencies
+node_modules/
+.pnp.*
+.yarn/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native builds
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# macOS
+macos/build/
+macos/Pods/
+
+# watchOS
+watchos/build/
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+__snapshots__/
+
+# Build artifacts
+*.ipa
+*.apk
+*.aab
+build/
+
+# Secrets
+credentials.json
+google-services.json
+GoogleService-Info.plist
+secrets/
